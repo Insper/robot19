@@ -55,7 +55,7 @@ O script `simulador_turtle.sh` já contém estes comandos, para conveniência.
 
 De permissão para executar com os comandos a seguir;
 
-    ~/catkin_ws/src/robot19/guides
+    cd ~/catkin_ws/src/robot19/guides
     chmod +x simulador_turtle.sh
     ./simulador_turtle.sh
 
