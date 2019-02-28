@@ -21,6 +21,9 @@ sudo apt-get install libatlas-base-dev gfortran
 
 sudo apt-get install python3-dev
 
+sudo apt-get install python3-numpy
+
+
 
 mkdir ~/tmp
 cd ~/tmp
@@ -58,6 +61,8 @@ make -j4
 
 
 sudo make install
+
+echo "export PYTHONPATH=/usr/lib/python:$PYTHONPATH" >> ~/.bashrc
 
 
 sudo ldconfig

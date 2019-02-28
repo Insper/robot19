@@ -29,6 +29,8 @@ Este tutorial foi elaborado com ajuda do aluno **Bruno Domingues** (Robótica - 
 
     sudo apt-get install python3-dev
 
+    sudo apt install python3-numpy
+
 
     mkdir ~/tmp
     cd ~/tmp
@@ -85,6 +87,11 @@ Agora **abra um novo terminal** (`Ctrl` `Alt` `T`) e digite o comando a seguir p
 Deve aparecer a versão da OpenCV que você está usando (no caso deste guia, deve ser a 3.4.4)
 
 
+## PYTHONPATH - precisamos configurar o Python para enxergar a OpenCV que acabamos de instalar
+
+    echo "export PYTHONPATH=/usr/lib/python:$PYTHONPATH" >> ~/.bashrc
+
+
 ## Jupyter
 
 Para instalar o Jupyter, por favor faça:
@@ -98,6 +105,7 @@ Depois:
 **nota** no Ubuntu é importante chamar explicitamente a versão $3$ das ferramentas Python: `python3`, `pip3`, etc. Isto acontece porque o Python $2$ continua presente e é o `python` default.
 
 
+    python3 -m ipykernel install --user
 
 
 
