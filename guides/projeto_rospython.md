@@ -99,13 +99,13 @@ Neste caso, para mudar de diretório faça:
 
 Vamos criar mais um código
 
-roscd meu_projeto/scripts
-touch le_scan.py
-chmod a+x le_scan.py
+	roscd meu_projeto/scripts
+	touch le_scan.py
+	chmod a+x le_scan.py
 
 Vamos editar:
 
-subl le_scan.py
+	subl le_scan.py
 
 Digite o código abaixo:
 
