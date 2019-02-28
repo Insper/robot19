@@ -19,12 +19,12 @@ Vamos nos certificar de que já temos os softwares do `Turtlebot` (só precisa s
     git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git  
 
 
-    cd ~/catkin_ws/src
+    cd ~/catkin_ws
     catkin_make
 
 ## Eliminando conflitos de configuração com o robô real
 
-Abra seu .bashrc e comente (colocando um caracter `h`) as linhas que definem as variáveis `ROS_IP` e `ROS_MASTER_URI`. Salve em seguida
+Abra seu .bashrc e comente (colocando um caracter `#`) as linhas que definem as variáveis `ROS_IP` e `ROS_MASTER_URI`. Salve em seguida
 
 Você pode editar usando o sublime:
 
@@ -37,6 +37,8 @@ Exemplo de como ficou o arquivo:
     # export ROS_MASTER_URI="http://"$IPBerry":11311"
     # export ROS_IP=`hostname -I`
     export TURTLEBOT3_MODEL=waffle_pi
+    
+ Feche o terminal e abara um novo para carregar as alterações.
 
 
 ## Verificando se o simulador funciona
@@ -49,7 +51,14 @@ Tentar ver se o simulador do robô funciona:
 
 É comum que na primeira vez que se executa o simulador haja demora para este abrir porque os modelos 3D estão sendo baixados. Seu computador precisa ter acesso à internet para funcionar.
 
-O script `simulador_turtle.sh` já contém estes comandos, para conveniência
+O script `simulador_turtle.sh` já contém estes comandos, para conveniência. 
+
+De permissão para executar com os comandos a seguir;
+
+    ~/catkin_ws/src/robot19/guides
+    chmod +x simulador_turtle.sh
+    ./simulador_turtle.sh
+
 
 ### Mudando o cenário
 
@@ -77,7 +86,7 @@ Neste ponto sua tela deve estar parecida com a figura abaixo:
 
 ## Explorando as ferramentas do ROS
 
-Vamos executar o `RViz`, que é uma ferramenta importante de monitoramento de dados de sensores e estado interno do robô
+Vamos executar o `RViz`, que é uma ferramenta importante de monitoramento de dados de sensores e estado interno do robô, em um novo terminal, execute:
 
     roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 
