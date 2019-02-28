@@ -89,7 +89,9 @@ Deve aparecer a versão da OpenCV que você está usando (no caso deste guia, de
 
 ## PYTHONPATH - precisamos configurar o Python para enxergar a OpenCV que acabamos de instalar
 
-    echo "export PYTHONPATH=/usr/lib/python:$PYTHONPATH" >> ~/.bashrc
+
+
+    echo "export PYTHONPATH=/usr/local/python:/usr/lib/python:\$PYTHONPATH" >> ~/.bashrc
 
 
 ## Jupyter

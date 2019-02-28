@@ -62,7 +62,7 @@ make -j4
 
 sudo make install
 
-echo "export PYTHONPATH=/usr/lib/python:$PYTHONPATH" >> ~/.bashrc
+echo "export PYTHONPATH=/usr/local/python:/usr/lib/python:\$PYTHONPATH" >> ~/.bashrc
 
 
 sudo ldconfig
