@@ -4,9 +4,9 @@
 
 [Como instalar o ROS em seu Linux (se você não usa o fornecido)](instalar_ros_melodic.md)
 
-[Simulador de Turtlebot](simulador_ros.md)
+[Simulador de Turtlebot](https://github.com/Insper/robot19/blob/master/guides/simulador_ros.md)
 
-[Criar projeto ROS Python](projeto_rospython.md)
+[Criar projeto ROS Python](https://github.com/Insper/robot19/blob/master/guides/projeto_rospython.md)
 
 
 
