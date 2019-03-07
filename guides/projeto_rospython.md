@@ -110,6 +110,9 @@ Vamos editar:
 Digite o código abaixo:
 
 ```python
+#! /usr/bin/env python
+# -*- coding:utf-8 -*-
+
 import numpy as np
 
 from geometry_msgs.msg import Twist, Vector3
@@ -143,9 +146,15 @@ if __name__=="__main__":
 
 ```
 
-Para conseguir executar:
+Agora precisamos compilar novamente
+
+    cd ~/catkin_ws/src
+    catkin_make
+
+Para conseguir executar, abra **um novo terminal** e digite:
 
     rosrun meu_projeto le_scan.py
+
 
 
 
