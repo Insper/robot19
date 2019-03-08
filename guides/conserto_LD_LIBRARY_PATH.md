@@ -29,7 +29,7 @@ Ao redor da linha 138, apague:
 
 Insira no arquivo a linha a seguir:
 
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/melodic/lib/parrot_arsdk/:/home/borg/intelFPGA_lite/17.1/modelsim_ase/lib32
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/melodic/lib/parrot_arsdk:/home/borg/intelFPGA_lite/17.1/modelsim_ase/lib32
 
 Salve seu arquivo `.bashrc`. As alterações que você fez passarão a valer assim que abrir um **novo terminal**
 
