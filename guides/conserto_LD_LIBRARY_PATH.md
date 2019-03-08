@@ -23,6 +23,7 @@ Apague a linha a seguir, que deve estar perto da `l.126`:
 
 
 Ao redor da linha 138, apague:
+
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/melodic/lib/parrot_arsdk/
 
 
