@@ -7,7 +7,7 @@ A variável de ambiente `$LD_LIBRARY_PATH` determina onde os sistemas *Unix* pro
 
 
 
-## Como consertar. 
+## Como consertar - opção 1
 
 
 Apague as duas linhas abaixo no seu arquivo `.bashrc`.
@@ -34,6 +34,8 @@ Insira no arquivo a linha a seguir:
 Salve seu arquivo `.bashrc`. As alterações que você fez passarão a valer assim que abrir um **novo terminal**
 
 
+## Como consertar - opção 2
 
+Simplesmente faça o [download deste arquivo .bashrc](.bashrc) e salve na pasta `~` do seu Linux, que provavelmente é `/home/borg``
 
 
