@@ -149,7 +149,7 @@ if __name__=="__main__":
 
 Agora precisamos compilar novamente
 
-    cd ~/catkin_ws/src
+    cd ~/catkin_ws/
     catkin_make
 
 Para conseguir executar, abra **um novo terminal** e digite:
