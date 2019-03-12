@@ -4,6 +4,10 @@ O SSD que foi fornecido tem muito espaço ainda  não alocado.  Este guia ajuda 
 
 **Importante: Você vai precisar plugar seu disco em um outro Linux para conseguir redimensioná-lo**
 
+**Caso prefira, passe na sala 404 que um dos técnicos pode fazer isso para você**
+
+
+
 ## Passo 1
 
 Plugue o SSD em algum Linux já inicializado.

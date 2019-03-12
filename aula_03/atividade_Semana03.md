@@ -60,6 +60,6 @@ Baseie-se no código `roda.py`, construído durante o tutorial
 
 ## 6. Robô indeciso
 
-Usando o simulador e o LIDAR simulado, faça um robô avançar quando o obstáculo bem à sua frente estiver a menos de 1.0m e recuar quando estiver a mais de 1.02 m.
+Usando o simulador e o LIDAR simulado, faça um robô avançar quando o obstáculo bem à sua frente estiver a mais de 1.0m e recuar quando estiver a menos de 1.02 m.
 
 Baseie-se no código `le_scan.py` e `roda.py`, desenvolvidos [durante o tutorial](../guides/projeto_rospython.md)
