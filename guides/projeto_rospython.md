@@ -50,8 +50,7 @@ Em seguida vamos editá-lo. Sugirmos usar o `subl`, que precisa ser instalado ca
 Dentro do editor cole o seguinte código para o `roda.py:
 
 ```python
-
-#! /usr/bin/env python3
+#! /usr/bin/env python
 # -*- coding:utf-8 -*-
 
 import rospy
@@ -110,7 +109,7 @@ Vamos editar:
 Digite o código abaixo:
 
 ```python
-#! /usr/bin/env python3
+#! /usr/bin/env python
 # -*- coding:utf-8 -*-
 
 
