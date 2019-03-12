@@ -51,7 +51,7 @@ Dentro do editor cole o seguinte código para o `roda.py:
 
 ```python
 
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 import rospy
@@ -89,7 +89,7 @@ Digite **num terminal novo**, criado depois de ter rodado o `catkin_make` acima:
 
     rosrun meu_projeto roda.py
 
-Note que o ROS encontra automaticamente seus scripts. Você não precisa de um terminal que esteja no mesmo diretório.  **Entretanto**, se seu código Python usa recuros locais (imagens, arquivos, etc) você vai precisar estar num diretório específico para executá-lo. 
+Note que o ROS encontra automaticamente seus scripts. Você não precisa de um terminal que esteja no mesmo diretório.  **Entretanto**, se seu código Python usa recursos do diretório local (imagens, arquivos, etc) você vai precisar estar num diretório específico para executá-lo. 
 
 Neste caso, para mudar de diretório faça:
 
@@ -110,7 +110,7 @@ Vamos editar:
 Digite o código abaixo:
 
 ```python
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 
