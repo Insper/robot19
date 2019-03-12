@@ -34,12 +34,14 @@ Vamos criar um diretório para os programas Python:
 
     cd ~/catkin_ws/src/meu_projeto
     mkdir scripts
+    cd scripts
 
 Vamos criar nosso primeiro script (vazio inicialmente)
 
     touch roda.py
 
 Agora vamos torná-lo executável:
+
     chmod a+x roda.py
 
 Em seguida vamos editá-lo. Sugirmos usar o `subl`, que precisa ser instalado caso não exista:
