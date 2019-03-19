@@ -16,6 +16,13 @@ Faça um clone de [https://github.com/insper/robot19/](https://github.com/insper
 
 Estude o código de `cor.py`. Você pode começar executando este programa. Primeiro **[conecte num robô](https://github.com/Insper/robot19/blob/master/guides/bringup_turtlebot.md)** para poder testar
 
+Rode num terminal o comando para que o tópico de câmera tenha um repetidor (relay) chamado `/kameras`
+
+    rosrun topic_tools relay /raspicam_node/image/compressed /kamera
+
+
+E em outro terminal
+
     rosrun exemplos_python cor.py
 
 Se necessário, **pegue uma caixa vermelha** emprestada com os técnicos do laboratório.
