@@ -36,6 +36,6 @@ Salve seu arquivo `.bashrc`. As alterações que você fez passarão a valer ass
 
 ## Como consertar - opção 2
 
-Simplesmente faça o [download deste arquivo .bashrc](.bashrc) e salve na pasta `~` do seu Linux, que provavelmente é `/home/borg``
+Simplesmente faça o [download deste arquivo .bashrc](.bashrc) e salve na pasta `~` do seu Linux, que provavelmente é `/home/borg` 
 
 
