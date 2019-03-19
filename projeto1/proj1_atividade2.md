@@ -1,10 +1,10 @@
 # Atividade 2 do projeto - OpenCV no robô
 
-No ROS a OpenCV trabalha com base em eventos.
+No ROS a OpenCV trabalha com base em eventos. Esta atividade permite que você estude isso mais a fundo
 
 ## Atividades
 
-###1. Programa ROS 
+### 1. Programa ROS 
 
 Faça um clone de [https://github.com/insper/robot19/](https://github.com/insper/robot19/) **dentro** de sua pasta `catkin_ws/src`.
 
@@ -28,7 +28,7 @@ Modique este para que o robô centralize sempre o objeto vermelho. Depois que o 
 Crie [seu próprio projeto](https://github.com/Insper/robot19/blob/master/guides/projeto_rospython.md), não trabalhe na pasta clonada do professor.
 
 
-###2. Usando a simulação 
+### 2. Usando a simulação 
 
 Leia [este guia de como rodar seu código OpenCV sem um robô físico](https://github.com/Insper/robot19/blob/master/guides/debugar_sem_robo_opencv_melodic.md).
 
