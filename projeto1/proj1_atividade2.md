@@ -4,6 +4,20 @@ No ROS a OpenCV trabalha com base em eventos. Esta atividade permite que você e
 
 ## Atividades
 
+
+### 0. Setup
+
+Baixe e rode o *script* para instalar a OpenCV nova também no Python 2 (que é o default do ROS)
+
+```bash
+wget https://raw.githubusercontent.com/Insper/robot19/master/guides/instalar_opencv_python2.sh
+chmod a+x instalar_opencv_python2.sh
+sudo ./instalar_opencv_python2.sh
+```
+
+Aguarde cerca de 10 minutos
+
+
 ### 1. Programa ROS 
 
 Faça um clone de [https://github.com/insper/robot19/](https://github.com/insper/robot19/) **dentro** de sua pasta `catkin_ws/src`.
