@@ -62,6 +62,8 @@ if __name__=="__main__":
 	# Para renomear a *webcam*
 	# 
 	# 	rosrun topic_tools relay  /cv_camera/image_raw/compressed /kamera
+	# Se não der certo, tente:
+	# 	rosrun topic_tools relay  /cv_camera/image_raw/compressed /kamera
 	# 
 	# Para renomear a câmera simulada do Gazebo
 	# 
