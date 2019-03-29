@@ -88,6 +88,9 @@ Para renomear a câmera da Raspberry
 
 	rosrun topic_tools relay /raspicam_node/image/compressed /kamera
 
+Note que, após fazer *relay*, pode ser que o `/kamera` não funcione no `rqt_image_view`
+
+
 
 
 
