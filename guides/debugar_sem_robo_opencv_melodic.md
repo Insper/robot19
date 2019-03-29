@@ -74,15 +74,19 @@ Nossa sugestão é que renomeio o tópico válido para `/kamera` , assim terá m
 
 Para renomear a *webcam*
 
+	rosparam set cv_camera/device_id 0
+	rosparam set cv_camera/cv_cap_prop_frame_width 640
+	rosparam set cv_camera/cv_cap_prop_frame_height  480
+	rosrun cv_camera cv_camera_node
 	rosrun topic_tools relay  /cv_camera/image_raw/compressed /kamera
 
 Para renomear a câmera simulada do Gazebo
 
-	rosrun topic_tools relay  /camera/rgb/image_raw/compressed /kamera /cam
+	rosrun topic_tools relay  /camera/rgb/image_raw/compressed /kamera
 
 Para renomear a câmera da Raspberry
 
-	rosrun topic_tools relay /raspicam_node/image/compressed /kamera /cam
+	rosrun topic_tools relay /raspicam_node/image/compressed /kamera
 
 
 
