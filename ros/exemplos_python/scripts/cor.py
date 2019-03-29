@@ -60,10 +60,14 @@ if __name__=="__main__":
 	topico_imagem = "/kamera"
 	
 	# Para renomear a *webcam*
-	# 
+	#   Primeiro instale o suporte https://github.com/Insper/robot19/blob/master/guides/debugar_sem_robo_opencv_melodic.md
+	#
+	#	Depois faça:
+	#	
+	#	rosrun cv_camera cv_camera_node
+	#
 	# 	rosrun topic_tools relay  /cv_camera/image_raw/compressed /kamera
-	# Se não der certo, tente:
-	# 	rosrun topic_tools relay  /cv_camera/image_raw/compressed /kamera
+	#
 	# 
 	# Para renomear a câmera simulada do Gazebo
 	# 
