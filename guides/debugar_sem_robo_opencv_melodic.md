@@ -46,15 +46,23 @@ Defina os parâmetros
 	rosparam set cv_camera/cv_cap_prop_frame_height  480
 
 
-Nota: se você precisar trabalhar com marcadores de realidade aumentada precisará [calibrar a câmera](calibrar_camera.md).
+### Executar
 
-
-Para executar:
+Para executar, **versão resumida**:
 
 	rosrun cv_camera cv_camera_node
 
+Depois de executar em geral **nada acontece**. A imagem aparece como um tópico ROS com o nome `/cv_camera/image_raw` e você precisa abrir usando `rqt_image_view`.
 
-Para executar -  versão completa **se precisar mudar parâmetros**:
+**Atenção**: Se aparecer um erro como o que vem a seguir, não há problema. Você pode seguir adiante desde que não esteja trabalhando com o modelo geométrico da câmera
+
+	[ INFO] [1554125696.719076263, 17.953000000]: Unable to open camera calibration file [/home/borg/.ros/camera_info/camera.yaml]
+	[ WARN] [1554125696.719251480, 17.953000000]: Camera calibration file /home/borg/.ros/camera_info/camera.yaml not found.
+
+Este erro é solucionado se você [calibrar a câmera](calibrar_camera.md). Etapa necessária por exemplo se você precisar trabalhar com marcadores de realidade aumentada.
+
+
+Para executar -  **versão completa se precisar mudar parâmetros**:
 
 	rosrun cv_camera cv_camera_node _image_width:=800  _image_height:=600 _device_id:=0 _camera_info_url:=https://raw.githubusercontent.com/Insper/robot19/master/guides/head_camera.yaml
 
