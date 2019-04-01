@@ -33,7 +33,7 @@ area = 0.0
 
 tolerancia_x = 50
 tolerancia_y = 20
-ang_speed = 8
+ang_speed = 5
 area_ideal = 60000 # área da distancia ideal do contorno - note que varia com a resolução da câmera
 tolerancia_area = 20000
 
@@ -61,6 +61,8 @@ def roda_todo_frame(imagem):
 		antes = time.clock()
 		cv_image = bridge.compressed_imgmsg_to_cv2(imagem, "bgr8")
 		media, centro, area = cormodule.identifica_cor(cv_image)
+		print("media {},{}".format(*media))
+		print("centro {},{}".format(*centro))
 		depois = time.clock()
 		cv2.imshow("Camera", cv_image)
 	except CvBridgeError as e:
