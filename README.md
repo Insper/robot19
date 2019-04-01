@@ -12,14 +12,15 @@
 
 ## Guias ROS
 
-[PARAR O ROBÔ](./parar_robo.md)
+[PARAR O ROBÔ](./guides/parar_robo.md)
 
+[Debugar sem robô - Como usar a webcam do laptop em vez do robô](./guides/debugar_sem_robo_opencv_melodic.md)
 
-[Como instalar o ROS em seu Linux  - se você não usa o fornecido](https://github.com/Insper/robot19/blob/master/guides/instalar_ros_melodic.md)
+[Como instalar o ROS em seu Linux  - se você não usa o fornecido](./guides/instalar_ros_melodic.md)
 
-[Simulador de Turtlebot](https://github.com/Insper/robot19/blob/master/guides/simulador_ros.md)
+[Simulador de Turtlebot](./guides/simulador_ros.md)
 
-[Criar um novo projeto ROS Python](https://github.com/Insper/robot19/blob/master/guides/projeto_rospython.md)
+[Criar um novo projeto ROS Python](./guides/projeto_rospython.md)
 
 [Conectar-se ao robô Turtlebot](./guides/bringup_turtlebot.md)
 
@@ -31,9 +32,9 @@
 [Instalar OpenCV 3.4.4 no Python2 e ROS](./guides/instalar_opencv_Python2_ros.md)
 
 
-[Instalar OpenCV 3.4.4 no Python 3 guia](https://github.com/Insper/robot19/blob/master/guides/instalar_opencv_dnn_sift.md)
+[Instalar OpenCV 3.4.4 no Python 3 guia](./guides/instalar_opencv_dnn_sift.md)
 
-[Instalar OpenCV 3.4.4 script - mais fácil](https://github.com/Insper/robot19/blob/master/guides/instalar_opencv_jupyter.sh)
+[Instalar OpenCV 3.4.4 script - mais fácil](./guides/instalar_opencv_jupyter.sh)
 
 
 ### Reparos e consertos
