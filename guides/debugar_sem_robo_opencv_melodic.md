@@ -1,13 +1,23 @@
 # Como testar seu projeto sem um robô físico
 
+## .bashrc
+
 *Nota: **cancele** sua variável `ROS_MASTER_URI` que é usada para se comunicar com um robô físico* 
 
-	#export ROS_MASTER_URI="http://"$IPBerry":11311"
+Este cancelamento é feito abrindo o arquivo `~/.bashrc` e colocando um `#` em frente à linha em que a variável é definida.
 
+```bash
+#export ROS_MASTER_URI="http://"$IPBerry":11311"
+```
+Lembre-se de que alterações no `.bashrc` só se tornam efetivas em **novos terminais**
+
+## Instalações com apt-get
 
 Instale pacotes relacionados com vídeo:
 
 	sudo apt-get install ros-melodic-cv-bridge ros-melodic-image-transport ros-melodic-openni-camera  ros-melodic-usb-cam  ros-melodic-async-web-server-cpp
+
+## Software de acesso à webcam
 
 Baixe um software que permite à OpenCV abrir diretamente a câmera:
 
@@ -44,15 +54,11 @@ Para executar:
 	rosrun cv_camera cv_camera_node
 
 
-Para executar: versão completa:
+Para executar -  versão completa **se precisar mudar parâmetros**:
 
-rosrun cv_camera cv_camera_node _image_width:=800  _image_height:=600 _device_id:=0 _camera_info_url:=https://raw.githubusercontent.com/Insper/robot19/master/guides/head_camera.yaml
+	rosrun cv_camera cv_camera_node _image_width:=800  _image_height:=600 _device_id:=0 _camera_info_url:=https://raw.githubusercontent.com/Insper/robot19/master/guides/head_camera.yaml
 
-rosrun cv_camera cv_camera_node  _device_id:=0 _camera_info_url:=https://raw.githubusercontent.com/Insper/robot19/master/guides/head_camera.yaml
-
-
-
-
+	rosrun cv_camera cv_camera_node  _device_id:=0 _camera_info_url:=https://raw.githubusercontent.com/Insper/robot19/master/guides/head_camera.yaml
 
 
 ## Mudanças no código
@@ -61,7 +67,9 @@ As mudanças necessárias no código se resumem a uma linha: Troque o nome do t�
 
 Passará a ficar assim:
 
-	recebedor = rospy.Subscriber("/cv_camera/image_raw/compressed", CompressedImage, roda_todo_frame, queue_size=1, buff_size = 2**24)
+```python
+recebedor = rospy.Subscriber("/cv_camera/image_raw/compressed", CompressedImage, roda_todo_frame, queue_size=1, buff_size = 2**24)
+```
 
 Para evitar que o código tenha que ser mudado, veja a dica abaixo
 
@@ -88,7 +96,7 @@ Para renomear a câmera da Raspberry
 
 	rosrun topic_tools relay /raspicam_node/image/compressed /kamera
 
-Note que, após fazer *relay*, pode ser que o `/kamera` não funcione no `rqt_image_view`
+Note que, após fazer *relay*, pode ser que o `/kamera` não funcione no `rqt_image_view` , mas ** vai funcionar no seu código**
 
 
 
