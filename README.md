@@ -3,6 +3,8 @@
 
 ## Projeto 1
 
+[Projeto 1 - Rubrica](./projeto1/rubrica_projeto1.pdf)
+
 [Projeto 1 - Atividade 1 Bumper](./projeto1/proj1_atividade1.md)
 
 [Projeto 1 - Atividade 2 Centraliza caixa](./projeto1/proj1_atividade2.md)
