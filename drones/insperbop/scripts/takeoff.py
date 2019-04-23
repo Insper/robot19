@@ -13,8 +13,8 @@ v = 10  # Velocidade linear
 w = 5  # Velocidade angular
 
 vel = rospy.Publisher("bebop/cmd_vel", Twist, queue_size = 1)
-takeoff = rospy.Publisher('bebop/takeoff', Empty, queue_size = 1)
-landing = rospy.Publisher('bebop/land', Empty, queue_size = 1)
+takeoff = rospy.Publisher('bebop/takeoff', Empty, queue_size = 1, latch=True)
+landing = rospy.Publisher('bebop/land', Empty, queue_size = 1, latch=True)
 
 
 if __name__ == "__main__":
@@ -22,9 +22,9 @@ if __name__ == "__main__":
     pub = rospy.Publisher("cmd_vel", Twist, queue_size=3)
 
     try:
-        while not rospy.is_shutdown():
-            takeoff.publish(empty_msg)
-            rospy.sleep(5.0)
+        rospy.sleep(3.0)
+        takeoff.publish(empty_msg)
+        rospy.sleep(5.0)
     except rospy.ROSInterruptException:
         print("Ocorreu uma exceção com o rospy")
 
