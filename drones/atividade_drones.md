@@ -49,21 +49,21 @@ Tenha este comando em seu histórico
 
 # Atividades
 
-##1. Teleop e foto
+## 1. Teleop e foto
 
 Faça o teleop do seu drone:
 
 Capture uma imagem a partir da câmera do drone em que se vê seu grupo
 
-##2. Modificação de código
+## 2. Modificação de código
 
 Altere o código fornecido na pasta `drones/insperbot/scripts` para fazer um script que faz o drone decolar, avançar `6m` e depois parar
 
-##3. Avançado
+## 3. Avançado
 
 Faça o `drone` abaixar sua altitude e decolar
 
-##4. Encerramento
+## 4. Encerramento
 
 Pergunte se o professor tem algo para você
 
