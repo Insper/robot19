@@ -23,7 +23,7 @@ if __name__ == "__main__":
     landing = rospy.Publisher('bebop/land', Empty, queue_size = 1, latch=True)
     zerov = Twist(Vector3(0,0,0), Vector3(0,0,0))
 
-    v = 0.8  # Velocidade linear
+    v = 0.4  # Velocidade linear
     vel = Twist(Vector3(v,0,0), Vector3(0,0,0))
 
 
