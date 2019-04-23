@@ -18,7 +18,7 @@ vel = Twist(Vector3(v,0,0), Vector3(0,0,w))
 
 
 if __name__ == "__main__":
-    rospy.init_node("roda_exemplo")
+    rospy.init_node("fly")
     pub = rospy.Publisher("cmd_vel", Twist, queue_size=3)
 
     count = 5

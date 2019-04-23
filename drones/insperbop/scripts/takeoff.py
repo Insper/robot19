@@ -18,7 +18,7 @@ landing = rospy.Publisher('bebop/land', Empty, queue_size = 1)
 
 
 if __name__ == "__main__":
-    rospy.init_node("roda_exemplo")
+    rospy.init_node("takeoff")
     pub = rospy.Publisher("cmd_vel", Twist, queue_size=3)
 
     try:
