@@ -117,8 +117,9 @@ if ! shopt -oq posix; then
 fi
 
 
-# Quinto Semestre Comp.
-export IPBerry=192.168.0.110 
+# 3.o Semestre Comp.
+export IPBerry=192.168.0.110
+# CANCELE  com # as linhas ROS_MASTER_URI  e ROS_IP se estiver usando com Gazebo, Sphinx ou Bebop
 export ROS_MASTER_URI="http://"$IPBerry":11311" 
 export ROS_IP=`hostname -I`
 export TURTLEBOT3_MODEL=burger 
