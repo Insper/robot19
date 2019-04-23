@@ -39,7 +39,12 @@ Para fazer o pouso
 
 Tenha este comando em seu histórico
 
-    rostopic pub -1 /cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+    rostopic pub -1 /bebop/cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+
+# Fazer flip
+
+    rostopic pub --once /bebop/flip std_msgs/UInt8 "0" 
+
 
 
 # Atividades
