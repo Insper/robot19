@@ -35,5 +35,32 @@ Para fazer o pouso
 
     rostopic pub --once bebop/land std_msgs/Empty
 
+# Parar o drone 
+
+Tenha este comando em seu histórico
+
+    rostopic pub -1 /cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+
+
+# Atividades
+
+##1. Teleop e foto
+
+Faça o teleop do seu drone:
+
+Capture uma imagem a partir da câmera do drone em que se vê seu grupo
+
+##2. Modificação de código
+
+Altere o código fornecido na pasta `drones/insperbot/scripts` para fazer um script que faz o drone decolar, avançar `6m` e depois parar
+
+##3. Avançado
+
+Faça o `drone` abaixar sua altitude e decolar
+
+##4. Encerramento
+
+Pergunte se o professor tem algo para você
+
 
 
