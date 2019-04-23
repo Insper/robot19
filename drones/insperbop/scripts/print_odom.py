@@ -15,16 +15,20 @@ y = -1
 z = -1
 
 def recebeu_leitura(dado):
-    x = dado.pose.position.x
-    y = dado.pose.position.y
-    z = dado.pose.position.z
+	global x
+	global y 
+	global z 
+
+    x = dado.pose.pose.position.x
+    y = dado.pose.pose.position.y
+    z = dado.pose.pose.position.z
 
 
 if __name__=="__main__":
 
 	rospy.init_node("print_odom")
 
-	recebe_scan = rospy.Subscriber("topico_odom", Odometry , recebeu_leitura)
+	recebe_scan = rospy.Subscriber(topico_odom, Odometry , recebeu_leitura)
 
 
 
@@ -32,4 +36,5 @@ if __name__=="__main__":
 		print("Oeee")
 		velocidade = Twist(Vector3(0, 0, 0), Vector3(0, 0, 1))
 		velocidade_saida.publish(velocidade)
+		print("{} {} {}".format(x, y, z))
 		rospy.sleep(2)
