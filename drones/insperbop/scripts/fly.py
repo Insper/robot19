@@ -1,8 +1,12 @@
 #! /usr/bin/env python
 # -*- coding:utf-8 -*-
 
-import rospy
+"""
 
+
+"""
+
+import rospy
 
 from geometry_msgs.msg import Twist, Vector3
 
@@ -23,9 +27,8 @@ if __name__ == "__main__":
     landing = rospy.Publisher('bebop/land', Empty, queue_size = 1, latch=True)
     zerov = Twist(Vector3(0,0,0), Vector3(0,0,0))
 
-    v = 0.4  # Velocidade linear
+    v = 0.3  # Velocidade linear
     vel = Twist(Vector3(v,0,0), Vector3(0,0,0))
-
 
     count = 15
 
@@ -38,5 +41,9 @@ if __name__ == "__main__":
         pub.publish(zerov)
         rospy.sleep(2.0)
     except rospy.ROSInterruptException:
-        print("Ocorreu uma exceção com o rospy")
+        pub.publish(vel)
+        rospy.sleep(1.0)
+
+
+
 
