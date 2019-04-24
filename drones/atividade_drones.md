@@ -102,7 +102,7 @@ Para rodar os exemplos faça:
     rosrun insperbop fly.py
 
 
-Altere o código fornecido na pasta [drones/insperbop/scripts](./insperbot/scripts) para fazer um script que faz o drone decolar, avançar `6m` e depois parar. Você *pode* fazer em malha aberta, mas se houver tempo use o tópico de odometria  `/bebop/odom` como mostrado no exemplo `print_odom.py`
+Altere o código fornecido na pasta [drones/insperbop/scripts](./insperbop/scripts) para fazer um script que faz o drone decolar, avançar `6m` e depois parar. Você *pode* fazer em malha aberta, mas se houver tempo use o tópico de odometria  `/bebop/odom` como mostrado no exemplo `print_odom.py`
 
     rosrun insperbop print_odom.py
 
