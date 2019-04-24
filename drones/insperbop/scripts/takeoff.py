@@ -1,16 +1,16 @@
 #! /usr/bin/env python
 # -*- coding:utf-8 -*-
 
-import rospy
+"""
+Faz o drone decolar
 
+"""
+
+import rospy
 from geometry_msgs.msg import Twist, Vector3
 from std_msgs.msg import Empty
 
 empty_msg = Empty()
-
-
-v = 10  # Velocidade linear
-w = 5  # Velocidade angular
 
 vel = rospy.Publisher("bebop/cmd_vel", Twist, queue_size = 1)
 takeoff = rospy.Publisher('bebop/takeoff', Empty, queue_size = 1, latch=True)
