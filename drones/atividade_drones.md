@@ -84,6 +84,7 @@ Antes de fazer uma missão totalmente autônoma valide muito bem suas leituras d
 
 Os arquivos `.py` precisam ter o nome dos integrantes do grupo
 
+
 ## 1. Teleop e foto
 
 Faça o *teleop* do seu drone e *capture* uma imagem a partir da câmera do drone em que se vê seu grupo
@@ -92,7 +93,18 @@ Nota: Pode ser com o `rqt_image_view` mesmo
 
 ## 2. Modificação de código
 
+Clone [https://github.com/insper/robot19](https://github.com/insper/robot19) dentro de seu `~/catkin_ws/src` e dê um `catkin_make``
+
+Para rodar os exemplos faça:
+
+    rosrun insperbop takeoff.py
+
+    rosrun insperbop fly.py
+
+
 Altere o código fornecido na pasta [drones/insperbop/scripts](./insperbot/scripts) para fazer um script que faz o drone decolar, avançar `6m` e depois parar. Você *pode* fazer em malha aberta, mas se houver tempo use o tópico de odometria  `/bebop/odom` como mostrado no exemplo `print_odom.py`
+
+    rosrun insperbop print_odom.py
 
 **Atenção**: as coordenadas $x$, $y$, $z$ de odometria **não coincidem** com as do drone
 
