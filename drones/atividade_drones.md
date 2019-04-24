@@ -92,7 +92,7 @@ Nota: Pode ser com o `rqt_image_view` mesmo
 
 ## 2. Modificação de código
 
-Altere o código fornecido na pasta [drones/insperbot/scripts](./insperbot/scripts) para fazer um script que faz o drone decolar, avançar `6m` e depois parar. Você *pode* fazer em malha aberta, mas se houver tempo use o tópico de odometria  `/bebop/odom` como mostrado no exemplo `print_odom.py`
+Altere o código fornecido na pasta [drones/insperbop/scripts](./insperbot/scripts) para fazer um script que faz o drone decolar, avançar `6m` e depois parar. Você *pode* fazer em malha aberta, mas se houver tempo use o tópico de odometria  `/bebop/odom` como mostrado no exemplo `print_odom.py`
 
 **Atenção**: as coordenadas $x$, $y$, $z$ de odometria **não coincidem** com as do drone
 
