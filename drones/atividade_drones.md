@@ -129,4 +129,4 @@ Pergunte se o professor tem algo para você
 
 Mostre seu programa funcionando para um dos professores ainda durante a atividade.
 
-Entregue os arquivos `.py`  e a foto do grupo via Blackboard. Todos os integranter precisam entregar.
+Entregue os arquivos `.py`  e a foto do grupo [via Blackboard](https://insper.blackboard.com/webapps/assignment/uploadAssignment?content_id=_592494_1&course_id=_30561_1&group_id=&mode=cpview). Todos os integrantes precisam entregar.
