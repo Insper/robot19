@@ -3,7 +3,7 @@
 
 """
 
-Faz um drone que já decolou voar em frente
+Faz um drone que ja decolou voar em frente
 
 """
 

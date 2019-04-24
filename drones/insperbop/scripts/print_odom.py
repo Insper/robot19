@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Para funcionar o drone já precisa estar funcionando
+    Para funcionar o drone ja ter decolado
     Opere o aparelho via teleop
 
 """
