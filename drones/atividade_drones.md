@@ -82,6 +82,8 @@ Antes de fazer uma missão totalmente autônoma valide muito bem suas leituras d
 
 # Atividades
 
+Os arquivos `.py` precisam ter o nome dos integrantes do grupo
+
 ## 1. Teleop e foto
 
 Faça o *teleop* do seu drone e *capture* uma imagem a partir da câmera do drone em que se vê seu grupo
@@ -115,4 +117,4 @@ Pergunte se o professor tem algo para você
 
 Mostre seu programa funcionando para um dos professores ainda durante a atividade.
 
-Entregue os arquivos `.py` zipados no Blackboard. Todos os integranter precisam entregar.
+Entregue os arquivos `.py`  e a foto do grupo via Blackboard. Todos os integranter precisam entregar.
