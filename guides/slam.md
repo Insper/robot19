@@ -27,6 +27,13 @@ Vamos precisar compilar o hector_map a partir do código-fonte:
 
 ## Robô
 
+
+As instruções abaixo são mostradas neste vídeo
+
+![pfilter.png](pfilter.png)
+
+[https://www.youtube.com/watch?v=njhYGFo8G-o](https://www.youtube.com/watch?v=njhYGFo8G-o)
+
 Primeiro precisamos definir qual Turtlebot usar na simulação. A versão *Waffle* é interessante porque já vem com a câmera (este comando deve ser repetido em todo terminal, ou adicionado ao final do ~/.bashrc).
 
     export TURTLEBOT3_MODEL=burger
