@@ -12,15 +12,18 @@ Cada comando precisa ser dado num terminal diferente.
 
 Vamos instalar os pacotes capazes de realizar *slam*:
 
-    sudo apt-get install ros-melodic-cartographer ros-melodic-cartographer-ros ros-melodic-cartographer-ros-msgs ros-melodic-cartographer-rviz
-
-    sudo apt-get install ros-melodic-hector-mapping
-
     sudo apt-get install ros-melodic-slam-karto
 
+Vamos precisar compilar o hector_map a partir do código-fonte:
 
+    cd ~/catkin_ws/src
+    git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam
 
+    cd hector_slam
+    rm -Rf hector_geotiff*
 
+    cd ~/catkin_ws
+    catkin_make
 
 ## Robô
 
@@ -49,7 +52,7 @@ Lembre-se de que existem as alternativas (use apenas uma de sua preferência)
 
 Depois o serviço de SLAM
 
-    roslaunch turtlebot3_slam turtlebot3_slam.launch  slam_methods:=gmapping
+    roslaunch turtlebot3_slam turtlebot3_slam.launch  slam_methods:=hector
 
 Agora abra um terminal que nos permita controlar o robô com as teclas:
 
@@ -59,7 +62,7 @@ Pilote seu robô ao longo do mapa - quem faz o mapa ser gerado é o *laser* em c
 
 Quando você executa o *SLAM* o *Rviz* também executa. Se precisar rodar o RViz separado,  use o seguinte comando
 
-    rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_gmapping.rviz
+    rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_hector.rviz
 
 ### SLAM Methods
 
@@ -70,6 +73,12 @@ Existem diversos outros métodos de SLAM que pode ser passados no argumento `sla
 * hector
 * karto
 * frontier_exploration
+
+Ainda não estão funcionando no ROS Melodic:
+* gmapping 
+* cartographer 
+* frontier_exploration
+
 
 Cada um deles precisa usar o *Rviz* de forma diferente. Veja os comandos abaixo:
 
