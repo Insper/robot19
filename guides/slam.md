@@ -8,6 +8,20 @@ Estes são os comandos necessários para executar o SLAM (*simultaneous localiza
 
 Cada comando precisa ser dado num terminal diferente.
 
+## Instalação
+
+Vamos instalar os pacotes capazes de realizar *slam*:
+
+    sudo apt-get install ros-melodic-cartographer ros-melodic-cartographer-ros ros-melodic-cartographer-ros-msgs ros-melodic-cartographer-rviz
+
+    sudo apt-get install ros-melodic-hector-mapping
+
+    sudo apt-get install ros-melodic-slam-karto
+
+
+
+
+
 ## Robô
 
 Primeiro precisamos definir qual Turtlebot usar na simulação. A versão *Waffle* é interessante porque já vem com a câmera (este comando deve ser repetido em todo terminal, ou adicionado ao final do ~/.bashrc).
