@@ -7,7 +7,7 @@ from .math_utils import EPS, THETA_EPS, my_atan2, dist, dist_sq
 
 
 @attr.s(cmp=False)
-class Segment:
+class Segment(object):
     """Line segment.
 
     Attributes:

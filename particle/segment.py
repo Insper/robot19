@@ -6,7 +6,7 @@ from math_utils import EPS, my_atan2
 
 
 @attr.s(cmp=False)
-class Segment:
+class Segment(object):
     """Line segment.
 
     Attributes:
