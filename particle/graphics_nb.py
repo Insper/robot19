@@ -23,8 +23,6 @@ os.getcwd()
 import sys
 sys.path.append(os.getcwd())
 
-import projeto_pf
-
 import importlib
 
 
