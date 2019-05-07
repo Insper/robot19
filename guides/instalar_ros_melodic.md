@@ -59,7 +59,7 @@ Vamos obter o software que falta para controle do Turtlebot clonando os reposit�
     git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git  
 
 
-    cd ~/catkin_ws/src
+    cd ~/catkin_ws/
     catkin_make
 
 Adicionar a configuração do robô ao `.bashrc`
