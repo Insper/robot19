@@ -4,9 +4,12 @@ package br.insper.robot19;
  * Fonte: https://bluej.org/
  */
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
 /**
  * Class Canvas - a class to allow for simple graphical 
@@ -366,5 +369,13 @@ public class Canvas
         {
             g.drawImage(canvasImage, 0, 0, null);
         }
+    }
+
+    public void saveFile(String filename){
+
+        BufferedImage bi = new BufferedImage(canvasImage);
+        File outputFile = new File(filename);
+        ImageIO.write(bi, "png", outputFile);
+
     }
 }

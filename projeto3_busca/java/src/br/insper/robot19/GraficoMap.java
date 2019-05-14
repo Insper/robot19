@@ -47,6 +47,7 @@ public class GraficoMap {
         }
         GraficoMap grafico = new GraficoMap(map);
         grafico.desenha();
+        grafico.saveFile("Busca1.png");
 
     }
 }
