@@ -32,9 +32,10 @@ public class VrepRobot {
 	/**
 	 * Construtor, faz a conexão com o simulador e 
 	 * captura os handles para o robô e seus motores
-	 * @param port - a porta de conexão com o simulador
+	 * @param vrep a instância da API
+	 * @param clientId o ID do cliente remoto
 	 */
-	public VrepRobot(remoteApi vrep, int clientId) {
+	VrepRobot(remoteApi vrep, int clientId) {
 		
 		this.vrep = vrep;
 		this.clientId = clientId;
@@ -54,7 +55,12 @@ public class VrepRobot {
         
         System.out.println("Robô simulado inicializado.");
 	}
-	
+
+	/**
+	 * Retorna a posição (x, y) do robô simulado em coordendas
+	 * absolutas do mapa, em metros.
+	 * @return um array [x, y] contendo a posição do robô
+	 */
 	public float[] getPosition() {
 		
 		int ret = vrep.simxSetJointTargetVelocity(clientId, leftMotorHandle, 0.0f, remoteApi.simx_opmode_oneshot);
@@ -68,7 +74,14 @@ public class VrepRobot {
 		}
 		return null;
 	}
-	
+
+	/**
+	 * Envia os sinal de controle para o robô simulado
+	 * executar comandos preespecificados
+	 * @param action o comando {@link RobotAction} a ser executado
+	 * @param magnitude a magnitude do comando, ou seja, o quanto
+	 *                     o robô deve se mover na direção especificada, em metros.
+	 */
 	public void execute(RobotAction action, float magnitude) {
 		switch(action) {
 		case DOWN:
@@ -92,7 +105,7 @@ public class VrepRobot {
 	
 	/**
 	 * Move o robô para frente usando um controle proporcional dos motores
-	 * @param meters
+	 * @param meters o quanto o robô deverá se mover, em metros
 	 */
 	public void moveForward(float meters) {
 		
@@ -139,8 +152,7 @@ public class VrepRobot {
 	
 	/**
 	 * Gira o robô para o ângulo fornecido, com controle proporcional dos motores
-	 * 
-	 * @param degrees - ângulo de giro em graus
+	 * @param degrees - ângulo final desejado de em graus
 	 */
 	public void turnTo(double degrees) {
 		

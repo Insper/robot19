@@ -21,11 +21,18 @@ import coppelia.remoteApi;
  *
  */
 public class VrepSimulator implements AutoCloseable {
-	
+
+	/**
+	 * Definição da porta de conexão à API remota do VREP
+	 */
 	private static final int PORT = 19997;
 		
 	private static VrepSimulator instance = null;
-	
+
+	/**
+	 * Método estático para a obtenção da instância do Singleton
+	 * @return o objeto {@link VrepSimulator} instanciado
+	 */
 	public static VrepSimulator getInstance() {
 		if(instance == null) {
 			instance = new VrepSimulator(PORT);
@@ -58,7 +65,7 @@ public class VrepSimulator implements AutoCloseable {
 	
 	/**
 	 * Cria uma instância do robô
-	 * @return
+	 * @return a instância criada que faz a comunicação com o robô simulado
 	 */
 	public VrepRobot createRobot() {
 		return new VrepRobot(vrep, clientId);
@@ -66,7 +73,7 @@ public class VrepSimulator implements AutoCloseable {
 	
 	/**
 	 * Cria uma instância do cenário simulado do robô
-	 * @return
+	 * @return objeto que faz a comunicação com o cenário
 	 */
 	public VrepWorld createWorld() {
 		return new VrepWorld(vrep, clientId);

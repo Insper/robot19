@@ -319,5 +319,41 @@ public void drawFloor(BlockType type, float x0, float y0, float x1, float y1) {
 			} sb.append(System.lineSeparator());
 		}
 		return sb.toString();
+
+	}
+
+	/**
+	 * Use for DRAWING purposes only
+	 * @param i - the x coordinate of the queried block type
+	 * @param j - the y coordinate of the queried block time
+	 * @return the block type at position (i,j)
+	 */
+	BlockType getBlockType(int i, int j){
+		return this.grid[i][j];
+	}
+
+	/**
+	 *
+	 * @return how many columns this grid has
+	 */
+	int getWidth(){
+		int ret = 0;
+		if (grid != null) {
+			if (grid[0]!= null) {
+				return grid[0].length;
+			}
+		}
+		return ret;
+	}
+
+	/**
+	 *
+	 * @return how many rows this grid has
+	 */
+	int getHeight(){
+		if (grid != null){
+			return grid.length;
+		}
+		return 0;
 	}
 }
