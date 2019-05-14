@@ -32,10 +32,10 @@ public class VrepWorld {
 	
 	/**
 	 * Construtor da classe
-	 * @param vrep
-	 * @param clientId
+	 * @param vrep instância do cliente da API remota
+	 * @param clientId ID do cliente
 	 */
-	public VrepWorld(remoteApi vrep, int clientId) {
+	VrepWorld(remoteApi vrep, int clientId) {
 		this.vrep = vrep;
 		this.clientId = clientId;
 		
@@ -51,7 +51,22 @@ public class VrepWorld {
             throw new RuntimeException(String.format("Remote API function call returned with error code: %d\n",ret));
         }		
 	}
-	
+
+	/**
+	 * Constroi um mapa de grade a partir do cenário atual do VREP.
+	 *
+	 * As dimensões do mapa resultam da divisão do tamanho do modelo
+	 * "Resizable_Floor" pelo tamanho da célula
+	 *
+	 * Os elementos que são capturados do cenário simulado são:
+	 * - A posição do robô é mapeada como a posição inicial da busca
+	 * - A posição do objeto Sliding door é mapeada como a posição de destino
+	 * - As paredes do tipo "240, 20 ou 80 cm High Wall" são mapeadas como obstáculos
+	 * - A superfície de metal "5x5m Metallic Floor" é mapeada como chão de metal
+	 * - A superfície do tipo Bump é mapeada como chão de areia
+	 * @param cellSize o tamanho da célula do mapa, em metros
+	 * @return o mapa de grade construído
+	 */
 	public GridMap buildMap(float cellSize) {
 		
 		float[] floorCoords = null;
