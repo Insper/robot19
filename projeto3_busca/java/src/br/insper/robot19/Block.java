@@ -11,6 +11,8 @@ public class Block {
 		this.col = j;
 		this.type = type;
 	}
+
+
 	
 	
 }

@@ -74,6 +74,9 @@ sudo apt install python3-pip
 
 sudo -H pip3 install jupyter
 
+source ~/.bashrc
+
+
 
 
 

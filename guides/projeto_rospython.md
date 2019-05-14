@@ -157,7 +157,32 @@ Para conseguir executar, abra **um novo terminal** e digite:
 
     rosrun meu_projeto le_scan.py
 
+## Como usar o Python 3 no Linux
 
+Nós usamos o `/usr/bin/env python` no exemplo acima, que usa o *Python 2*. Em projetos futuros é recomendável usar o *Python 3*.
+
+Para que funcione, instale o suporte a ROS do Python 3:
+
+    sudo apt-get install python3-catkin-pkg python3-rospkg
+
+Para que o *catkin* localize todos os pacotes:
+
+    sudo apt-get install --reinstall ros-melodic-catkin
+
+
+
+
+Em seguida, troque as duas linhas iniciais do arquivo `.py`  para ficar assim:
+
+```python
+#! /usr/bin/env python3
+# -*- coding:utf-8 -*-
+```
+
+
+
+
+**Atenção** se você tiver Anaconda em seu Linux, pode ser que tenha vários *python3* e o *ROS* e *OpenCV* estejam instalados somente em alguns deles.
 
 
 

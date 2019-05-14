@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bddaae0-351b-4d4a-b1d1-dae2778ec9a4" name="Default Changelist" comment="">
+    <list default="true" id="2bddaae0-351b-4d4a-b1d1-dae2778ec9a4" name="Default Changelist" comment="Envio da classe Canvas que vai centralizar a parte gráfica">
       <change beforePath="$PROJECT_DIR$/../../guides/instalar_opencv_jupyter.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../guides/instalar_opencv_jupyter.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../guides/instalar_opencv_python2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../guides/instalar_opencv_python2.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../guides/instalar_ros_melodic.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../guides/instalar_ros_melodic.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../guides/projeto_rospython.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../guides/projeto_rospython.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../particle/ParticleFilter2019.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../particle/ParticleFilter2019.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../particle/animated.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../../particle/animated.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map_teste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map_teste.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj3_busca/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/br/insper/robot19/GridMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj3_busca/br/insper/robot19/GridMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/map_teste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj3_busca/map_teste.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/mapa_teste.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/run_executa.sh" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj3_busca/run_executa.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/src/br/insper/robot19/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj3_busca/src/br/insper/robot19/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj3_busca/src/br/insper/robot19/GridMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj3_busca/src/br/insper/robot19/GridMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/insper/robot19/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/insper/robot19/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,17 +34,109 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/test/GridMapTest.java">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GridMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="233">
+              <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2999#3000#0" expanded="true" />
+                <element signature="e#3032#3033#0" expanded="true" />
+                <element signature="e#8150#8151#0" expanded="true" />
+                <element signature="e#8179#8180#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GridMap.java">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/BlockStatus.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map_teste.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/ExecutaBusca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resolvido.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/Block.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/Canvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="979">
+              <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7942#7943#0" expanded="true" />
+                <element signature="e#7984#7985#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/BlockType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepWorld.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-149">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
             <state relative-caret-position="34">
               <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding>
@@ -93,6 +197,22 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>rect</find>
+      <find>canvasImage</find>
+      <find>fillCir</find>
+      <find>width</find>
+      <find>drawline</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -100,24 +220,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/map_teste.txt" />
+        <option value="$PROJECT_DIR$/src/br/insper/robot19/GraficoBusca.java" />
         <option value="$PROJECT_DIR$/src/br/insper/robot19/GridMap.java" />
-        <option value="$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepSimulator.java" />
-        <option value="$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepRobot.java" />
-        <option value="$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepWorld.java" />
+        <option value="$PROJECT_DIR$/src/br/insper/robot19/Canvas.java" />
+        <option value="$PROJECT_DIR$/src/br/insper/robot19/Block.java" />
+        <option value="$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1353" />
+    <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,13 +271,16 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
@@ -249,21 +367,48 @@
       <option name="presentableId" value="Default" />
       <updated>1557764172613</updated>
     </task>
+    <task id="LOCAL-00001" summary="Envio da classe Canvas que vai centralizar a parte gráfica">
+      <created>1557841332592</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557841332592</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Envio da classe Canvas que vai centralizar a parte gráfica">
+      <created>1557853316064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557853316064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="classes gráficas - habilidade de salvar screenshot">
+      <created>1557854299853</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557854299854</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_proj3_busca - 2019.05.13 at 13h 24m 03s.xml">
+      <configuration name="All in proj3_busca" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4420382" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,7 +416,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3299363" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.17739628" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -281,6 +427,44 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4420382" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3299363" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Envio da classe Canvas que vai centralizar a parte gráfica" />
+    <MESSAGE value="classes gráficas - habilidade de salvar screenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="classes gráficas - habilidade de salvar screenshot" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java$GraficoMap.ic" NAME="GraficoMap Coverage Results" MODIFIED="1557857595856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>br.insper.robot19.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/br/robot19/Main.java" />
@@ -291,71 +475,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GridMap.java">
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/BuscaLargura.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#900#917#0" expanded="true" />
-            <element signature="e#974#993#0" expanded="true" />
-            <element signature="e#2999#3000#0" expanded="true" />
-            <element signature="e#3032#3033#0" expanded="true" />
-            <element signature="e#3081#3082#0" expanded="true" />
-            <element signature="e#3132#3133#0" expanded="true" />
-            <element signature="e#8302#8303#0" expanded="true" />
-            <element signature="e#8331#8332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../bot19/busca/BA2702BE.tmp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4098">
-          <caret line="375" column="27" selection-start-line="375" selection-start-column="27" selection-end-line="375" selection-end-column="27" />
+        <state relative-caret-position="815">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepRobot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="188" column="23" lean-forward="true" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
+        <state relative-caret-position="-2219">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="69" column="16" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1809#1810#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/vrep/VrepWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        <state relative-caret-position="-149">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map_teste.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/BlockStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/BlockType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resolvido.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="979">
+          <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7942#7943#0" expanded="true" />
+            <element signature="e#7984#7985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/ExecutaBusca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GridMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2999#3000#0" expanded="true" />
+            <element signature="e#3032#3033#0" expanded="true" />
+            <element signature="e#8150#8151#0" expanded="true" />
+            <element signature="e#8179#8180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

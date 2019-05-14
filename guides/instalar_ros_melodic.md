@@ -24,6 +24,11 @@ Mais alguns softwares:
 
     sudo apt install     python-rosinstall-generator ros-melodic-ar-track-alvar ros-melodic-ar-track-alvar-dbgsym ros-melodic-ar-track-alvar-msgs ros-melodic-desktop-full ros-melodic-eigen-conversions ros-melodic-eigen-conversions-dbgsym ros-melodic-eigen-stl-containers ros-melodic-gscam ros-melodic-opencv-apps ros-melodic-opencv-apps-dbgsym ros-melodic-parrot-arsdk ros-melodic-turtlebot3-applications-msgs ros-melodic-turtlebot3-fake ros-melodic-turtlebot3-fake-dbgsym ros-melodic-turtlebot3-gazebo ros-melodic-turtlebot3-gazebo-dbgsym ros-melodic-turtlebot3-msgs ros-melodic-turtlebot3-simulations ros-melodic-vision-opencv ros-melodic-turtlebot3-msgs ros-melodic-ar-track-alvar ros-melodic-turtlebot3-applications-msgs
 
+Compatibilidade do ROS com Python3:
+
+    sudo apt-get install python3-catkin-pkg python3-rospkg
+
+
 Instalar software para lidar com *stream* de vídeo vindo do robô:
 
     sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-* gstreamer1.0-libav* gstreamer1.0-plugins*
