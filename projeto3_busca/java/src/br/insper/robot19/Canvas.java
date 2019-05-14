@@ -10,6 +10,7 @@ import java.awt.*;
 import java.awt.geom.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Class Canvas - a class to allow for simple graphical 
@@ -373,9 +374,42 @@ public class Canvas
 
     public void saveFile(String filename){
 
-        BufferedImage bi = new BufferedImage(canvasImage);
+        //BufferedImage bi = new BufferedImage(canvasImage);
         File outputFile = new File(filename);
-        ImageIO.write(bi, "png", outputFile);
+        try {
+            ImageIO.write(toBufferedImage(canvasImage), "png", outputFile);
+            System.out.println(outputFile.getAbsolutePath() + " saved");
+        } catch (IOException e) {
+            System.out.println("Error while saving file " + filename);
+            e.printStackTrace();
+        }
 
+    }
+
+
+    /**
+     * Converts a given Image into a BufferedImage
+     * Font: https://stackoverflow.com/questions/13605248/java-converting-image-to-bufferedimage
+     *
+     * @param img The Image to be converted
+     * @return The converted BufferedImage
+     */
+    public static BufferedImage toBufferedImage(Image img)
+    {
+        if (img instanceof BufferedImage)
+        {
+            return (BufferedImage) img;
+        }
+
+        // Create a buffered image with transparency
+        BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+
+        // Draw the image on to the buffered image
+        Graphics2D bGr = bimage.createGraphics();
+        bGr.drawImage(img, 0, 0, null);
+        bGr.dispose();
+
+        // Return the buffered image
+        return bimage;
     }
 }

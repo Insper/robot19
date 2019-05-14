@@ -38,6 +38,13 @@ public class GraficoMap {
 
     }
 
+    /**
+     * Saves a png file with what's shown in the Canvas
+     */
+    public void saveFile(String filename){
+        screen.saveFile(filename);
+    }
+
     public static void main(String[] args) {
         GridMap map = null;
         try {
