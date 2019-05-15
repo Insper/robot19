@@ -59,7 +59,7 @@ As classes de  pressupõe que:
  Os demais elementos do cenário só serão reconhecidos na geração do mapa de grade se estiverem dentro das opções descritas acima
  
  
- ![Tela do simulador V-REP](VREP1.png "Figura 1: tela do V-REP")
+ ![Tela do simulador V-REP](VREP1.PNG "Figura 1: tela do V-REP")
  **Figura 1:** Tela do V-REP com destaque para o botão Real Time (círculo vermelho), Play (círculo verde) e para o robô que deve se usado na simulação
  
 
