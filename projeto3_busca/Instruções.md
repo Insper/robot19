@@ -44,7 +44,7 @@ A integração deve ser feita com a leitura dos métodos disponíveis nas classe
 ### Precondições
 
 As classes de  pressupõe que:
- 1. O simulador está aberto e rodando a simulação em modo Real Time (símbolo do relógio acionado)
+ 1. O simulador está aberto e rodando a simulação em modo Real Time (símbolo do relógio acionado - figura 1)
  2. O simulador escuta comandos de um cliente externo na porta 19997 (comportamento padrão)
  3. A cena sendo simulad seja baseada em um ResizableFloor (5 a 25 m)
  4. A cena a contém um e somente um robô do tipo Pioneer P3DX, e uma porta de acionamento automático
@@ -52,5 +52,16 @@ As classes de  pressupõe que:
  4. Os obstáculos são construídos a partir de objetos do tipo Wall, preferencialmente com altura de com atura de 240cm
  5. A superfície de metal é simulada com o elemento "5m X 5m Metallic Floor"
  6. A superfície de areia é simulada com o elemento "Bump", cuja altura deve ser bem pequena para que o robô consiga pasar por cima
+ 
+ O tipo de chão padrão ao se iniciar o V-REP é o Resizable Floor (5 to 25m), que já está correto.
+ Os demais elementos do cenário só serão reconhecidos na geração do mapa de grade se estiverem dentro das opções descritas acima
+ 
+ 
+ 
+ ![alt text](VREP1.png "Figura 1: tela do V-REP")
+ **Figura 1:** Tela do V-REP com destaque para o botão Real Time (círculo vermelho), Play (círculo verde) e para o robô que deve se usado na simulação
+ 
+ 
+
  
  
