@@ -1,4 +1,4 @@
-# Atividade de Busca A*
+# Projeto de Busca Greedy e A*
 
 ## Objetivo
 O objetivo deste projeto é implementar as diversas modalidades de busca heurística aplicadas ao planejamento de 
@@ -7,7 +7,7 @@ caminho em robótica, e a sua integração com o simulador VREP.
 ## Implementação da busca
 
 O projeto Java BuscaVREP faz a implementação da busca em largura (busca geral do livro do Russel) em um mapa
-retangular reticulado previamente fornecido no formato de texto. Os símbolos utilizads são:
+retangular reticulado previamente fornecido no formato de texto. Os símbolos utilizado são:
 - **#** - parede (intransponível)
 - **0** : posição inicial
 - **G** : posição alvo (goal)
@@ -21,6 +21,8 @@ Os arquivos fornecidos a serem manipulados são:
  - `BuscaLargura.java`: exemplo de implementação da busca em largura (busca geral do livro do Russel),
  que deve ser modificado para implementar as demais modalidades de busca.
  - `ExecutaBusca.java`: exemplo de chamada à busca em largura, que deverá invocar os demais tipos de busca conforme o caso
+ - `GraficoMap.java`: exemplo de chamada à busca em largura que explica como usar a classe `GraficoMap` que faz o *output* gráfico como [na figura](./java/Resolvido.png)
+
  
  Para executar o projeto sem a integração com o simulador, basta executar a classe `ExecutaBusca`.
  
@@ -46,7 +48,7 @@ A integração deve ser feita com a leitura dos métodos disponíveis nas classe
 As classes de  pressupõe que:
  1. O simulador está aberto e rodando a simulação em modo Real Time (símbolo do relógio acionado - figura 1)
  2. O simulador escuta comandos de um cliente externo na porta 19997 (comportamento padrão)
- 3. A cena sendo simulad seja baseada em um ResizableFloor (5 a 25 m)
+ 3. A cena sendo simulada seja baseada em um ResizableFloor (5 a 25 m)
  4. A cena a contém um e somente um robô do tipo Pioneer P3DX, e uma porta de acionamento automático
  (sliding door), usada como posição alvo do robô
  4. Os obstáculos são construídos a partir de objetos do tipo Wall, preferencialmente com altura de com atura de 240cm
@@ -57,11 +59,11 @@ As classes de  pressupõe que:
  Os demais elementos do cenário só serão reconhecidos na geração do mapa de grade se estiverem dentro das opções descritas acima
  
  
- 
- ![alt text](VREP1.png "Figura 1: tela do V-REP")
+ ![Tela do simulador V-REP](VREP1.png "Figura 1: tela do V-REP")
  **Figura 1:** Tela do V-REP com destaque para o botão Real Time (círculo vermelho), Play (círculo verde) e para o robô que deve se usado na simulação
  
- 
 
- 
+ ### Rubrica
+
+ A [rubrica do projeto está disponível](RUBRICA_proj3.pdf)
  
