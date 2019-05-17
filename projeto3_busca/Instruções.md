@@ -6,8 +6,7 @@ caminho em robótica, e a sua integração com o simulador VREP.
 
 ## Implementação da busca
 
-O projeto Java BuscaVREP faz a implementação da busca em largura (busca geral do livro do Russel) em um mapa
-retangular reticulado previamente fornecido no formato de texto. Os símbolos utilizado são:
+O projeto Java BuscaVREP faz a implementação da busca em largura (busca geral do livro do Russel) em um mapa retangular reticulado previamente fornecido no formato de texto. Os símbolos utilizado são:
 - **#** - parede (intransponível)
 - **0** : posição inicial
 - **G** : posição alvo (goal)
@@ -16,16 +15,31 @@ retangular reticulado previamente fornecido no formato de texto. Os símbolos ut
 - **3** : suerfície de metal (custo=3)
 - **X** : superfície de areia (custo=10)
 
+Para executar o projeto sem a integração com o simulador, basta executar a classe `ExecutaBusca`.
+ 
+## Dicas para a implementação da busca
+
+O projeto Java fornecido executa a **busca em largura** em uma mapa de grade.
+Uma vez que ela faz parte da classe de buscas cegas, ou seja, que não usam
+informações específicas sobre o problema, implementar as buscas informadas
+(como a **buca gulosa** e a **busca A* **) requer:
+
+1. Acrescentar a informação do valor da função heurística $h(n)$ no nó de busca
+2. Criar um mecanismo para sempre ordenar a fronteira em ordem do valor desejado
+(função heurística  $h(n)$ ou função de avaliação $f(n)=g(n)+h(n)$). Esse mecanismo
+já está implementado em Java através da classe `PriorityQueue` (ver [este link](https://stackoverflow.com/questions/683041/how-do-i-use-a-priorityqueue))
+
+Além disso, implementar o algoritmo da busca em grafo (aquela que evita estados repetidos) requer também armazenar uma lista onde cada estado aparece apenas uma vez.
+A classe que implementa o estado do problema é
+a classe `Block` que já possui os métodos necessários para ser armazenada em conjuntos de exemplares únicos (como [HashSet](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html)).
+
 Os arquivos fornecidos a serem manipulados são:
  - `mapa_teste.txt`: exemplo de mapa que o projeto consegue carregar
- - `BuscaLargura.java`: exemplo de implementação da busca em largura (busca geral do livro do Russel),
- que deve ser modificado para implementar as demais modalidades de busca.
- - `ExecutaBusca.java`: exemplo de chamada à busca em largura, que deverá invocar os demais tipos de busca conforme o caso
+ - `BuscaLargura.java`: exemplo de implementação da busca em largura (busca geral do livro do Russel), que deve ser modificado para implementar as demais modalidades de busca.
+ - `Node.java`: que deve ser atualizada para armazenar também o valor da função heurístcia como seu propriedade
+ - `ExecutaBusca.java`: exemplo de chamada à busca em largura, que deverá invocar os demais tipos de busca conforme o caso, além de invocar a API do simulador V-REP, quando a integração for realizada
  - `GraficoMap.java`: exemplo de chamada à busca em largura que explica como usar a classe `GraficoMap` que faz o *output* gráfico como [na figura](./java/Resolvido.png)
 
- 
- Para executar o projeto sem a integração com o simulador, basta executar a classe `ExecutaBusca`.
- 
  
  ## Integração com o simulador VREP
  
