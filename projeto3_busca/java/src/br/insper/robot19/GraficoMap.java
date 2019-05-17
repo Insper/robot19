@@ -73,7 +73,7 @@ public class GraficoMap {
 
         screen.setForegroundColor(Color.GREEN);
         screen.fillCircle(start[1]*sqx+sqx/4, start[0]*sqy+sqy/4, sqx/2);
-x
+
         screen.setForegroundColor(Color.RED);
         screen.fillCircle(goal[1]*sqx+sqx/4, goal[0]*sqy+sqy/4, sqx/2);
 
