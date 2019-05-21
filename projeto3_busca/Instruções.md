@@ -43,6 +43,13 @@ Os arquivos fornecidos a serem manipulados são:
  
  ## Integração com o simulador VREP
  
+ ### Instalação do V-REP
+ - O simulador deve ser baixado do site: [http://www.coppeliarobotics.com/downloads.html]
+ - Baixe a versão 3.61 PRO EDU (licença para uso educacional)
+ - No caso do sistema operacional Linux, inicialize o simulador através do script `vrep.sh^
+ 
+ ### Código para a integração com o simulador
+ 
  O pacote `br.insper.robot19.vrep` contém as classes necessárias à integração com o simulador VREP.
  
  O arquivo de execução da busca com integração ao VREP deve fazer com que o mapa seja lido diretamente do simulador,
@@ -60,14 +67,15 @@ A integração deve ser feita com a leitura dos métodos disponíveis nas classe
 ### Precondições
 
 As classes de  pressupõe que:
- 1. O simulador está aberto e rodando a simulação em modo Real Time (símbolo do relógio acionado - figura 1)
+ 1. O simulador está aberto e rodando a simulação em modo Real Time (símbolos de "Play" e do relógio acionados - figura 1)
  2. O simulador escuta comandos de um cliente externo na porta 19997 (comportamento padrão)
  3. A cena sendo simulada seja baseada em um ResizableFloor (5 a 25 m)
  4. A cena a contém um e somente um robô do tipo Pioneer P3DX, e uma porta de acionamento automático
  (sliding door), usada como posição alvo do robô
- 4. Os obstáculos são construídos a partir de objetos do tipo Wall, preferencialmente com altura de com atura de 240cm
- 5. A superfície de metal é simulada com o elemento "5m X 5m Metallic Floor"
- 6. A superfície de areia é simulada com o elemento "Bump", cuja altura deve ser bem pequena para que o robô consiga pasar por cima
+ 5. O script do robô (acesso como na figura 2) deve estar vazio
+ 6. Os obstáculos são construídos a partir de objetos do tipo Wall, preferencialmente com altura de com atura de 240cm
+ 7. A superfície de metal é simulada com o elemento "5m X 5m Metallic Floor"
+ 8. A superfície de areia é simulada com o elemento "Terrain Bump", cuja altura deve ser bem pequena para que o robô consiga pasar por cima
  
  O tipo de chão padrão ao se iniciar o V-REP é o Resizable Floor (5 to 25m), que já está correto.
  Os demais elementos do cenário só serão reconhecidos na geração do mapa de grade se estiverem dentro das opções descritas acima
@@ -76,7 +84,10 @@ As classes de  pressupõe que:
  ![Tela do simulador V-REP](VREP1.PNG "Figura 1: tela do V-REP")
  **Figura 1:** Tela do V-REP com destaque para o botão Real Time (círculo vermelho), Play (círculo verde) e para o robô que deve se usado na simulação
  
-
+ ![Tela do script do robô no V-REP](VREP_SCRIPT.PNG "Figura 2: Acessando o script do robô")
+ **Figura 2:** Tela do V-REP com destaque para o botão de acesso (double-click) ao script do robô, que deve ser apagado
+ 
+ 
  ### Rubrica
 
  A [rubrica do projeto está disponível](RUBRICA_proj3.pdf)

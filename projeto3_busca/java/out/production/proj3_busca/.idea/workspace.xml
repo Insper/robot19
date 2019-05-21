@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e986e481-f1d5-4752-bb1a-2ebcc10963db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../aula_02/folha_atividade.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula_02/folha_atividade.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula_03/tracking/drone.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula_03/tracking/drone.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula_03/tracking/nascar_01.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula_03/tracking/nascar_01.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula_03/tracking/nascar_02.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula_03/tracking/nascar_02.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../drones/atividade_drones.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../drones/atividade_drones.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../projeto1/rubrica_projeto1_v2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../projeto1/rubrica_projeto1_v2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RUBRICA_proj3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../RUBRICA_proj3.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Busca1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Busca1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resolvido.png" beforeDir="false" afterPath="$PROJECT_DIR$/Resolvido.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/ExecutaBusca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -103,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ExecutaBusca">
+  <component name="RunManager" selected="Application.GraficoMap">
     <configuration name="ExecutaBusca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.insper.robot19.ExecutaBusca" />
       <module name="proj3_busca" />
@@ -132,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExecutaBusca" />
         <item itemvalue="Application.GraficoMap" />
+        <item itemvalue="Application.ExecutaBusca" />
       </list>
     </recent_temporary>
   </component>
@@ -148,18 +149,11 @@
       <option name="presentableId" value="Default" />
       <updated>1558099731505</updated>
     </task>
-    <task id="LOCAL-00001" summary="Acrescentando DLLs nativas para comunicação com o V-REP&#10;Consertando pequeno typo em GraficoMapa.java">
-      <created>1558103203142</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1558103203142</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -170,15 +164,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -188,10 +182,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Acrescentando DLLs nativas para comunicação com o V-REP&#10;Consertando pequeno typo em GraficoMapa.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Acrescentando DLLs nativas para comunicação com o V-REP&#10;Consertando pequeno typo em GraficoMapa.java" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/test/GridMapTest.java">
@@ -250,20 +240,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java">
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/ExecutaBusca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proj3_busca.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/ExecutaBusca.java">
+    <entry file="file://$PROJECT_DIR$/src/br/insper/robot19/GraficoMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="125">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
