@@ -163,7 +163,7 @@ public class VrepRobot {
 			System.out.println("Robô não encontrado no simulador");
 			return;
 		}
-		float thetaIni = this.getAngle(orient.getArray());
+		float thetaIni = this.getAngle(orient.getArray(), (float)degrees);
 				
 		// Itera até que o robô chegue próximo o suficiente ao objetivo 
 		float theta = thetaIni;
@@ -188,11 +188,19 @@ public class VrepRobot {
 				System.out.println("Robô não encontrado no simulador");
 				return;
 			}
-			theta = this.getAngle(orient.getArray());
+			theta = this.getAngle(orient.getArray(), (float) degrees);
 		}
 	}	
 	
-	private float getAngle(float[] eulerAngles) {
-		return  (float)((eulerAngles[2] > Math.PI ? eulerAngles[2] - Math.PI*2  : eulerAngles[2])*180.0/Math.PI); 
+	private float getAngle(float[] eulerAngles, float ref) {
+
+		double ang = Math.toDegrees(eulerAngles[2]);
+		while(ref - ang > 180.) {
+			ang += 360.;
+		}
+		while(ref - ang < -180.) {
+			ang -= 360.;
+		}
+		return  (float)ang;
 	}	
 }

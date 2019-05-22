@@ -22,7 +22,7 @@ public class VrepWorld {
 	private static final String DOOR_NAME_REGEX = "^slidingDoor[0-9_]*$";
 	private static final String FLOOR_NAME_REGEX = "^ResizableFloor[0-9_]+$";
 	private static final String METALFLOOR_NAME_REGEX = "^[0-9cmX]*MetallicFloor[0-9]*$";
-	private static final String SANDBUMP_NAME_REGEX = "Bump[0-9]*$";
+	private static final String SANDBUMP_NAME_REGEX = "Bump[0-9#]*$";
 	private static final String WALL_REGEX = "^[0-9cm]*cmHighWall[0-9]+cm[0-9]*$";
 		
 	private final remoteApi vrep;
