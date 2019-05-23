@@ -1,9 +1,6 @@
 package br.insper.robot19;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 
 
 /**
@@ -36,17 +33,18 @@ public class BuscaLargura {
 	 * @return
 	 */
 	public Node buscar() {
-		
-		Node root = new Node(start, null, null, 0);
-		
-		//Limpa a fronteira e insere o nó raiz
+
+		Node root = new Node(start, null, null, 0, 0);
 		border = new LinkedList<Node>();
 		border.add(root);
+		HashSet<Block> listablocos = new HashSet<Block>();
+
 		
 		while(!border.isEmpty()) {
-			
+
 			Node node = border.remove();
 			Block atual = node.getValue();
+			listablocos.add(atual);
 			
 			if(atual.row == end.row && atual.col == end.col) {
 				return node;
@@ -55,8 +53,8 @@ public class BuscaLargura {
 				
 				Block proximo = map.nextBlock(atual, acao);
 				
-				if(proximo != null && proximo.type != BlockType.WALL) {
-					Node novoNode = new Node(proximo, node, acao, proximo.type.cost);
+				if(proximo != null && proximo.type != BlockType.WALL && !listablocos.contains(proximo)) {
+					Node novoNode = new Node(proximo, node, acao, proximo.type.cost, 0);
 					border.add(novoNode);
 				}
 			}

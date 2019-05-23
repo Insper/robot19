@@ -5,12 +5,14 @@ public class Node {
 	private Node parent;
 	private RobotAction action;
 	private float pathCost;
+	private float heuristica;
 
-	public Node (Block value, Node parent, RobotAction action, float cost) {
+	public Node (Block value, Node parent, RobotAction action, float cost, float heuristica) {
 		this.value = value;
 		this.parent = parent;
 		this.action = action;
 		this.pathCost = parent == null ? 0 : parent.getPathCost() + cost;
+		this.heuristica = heuristica;
 	}
 
 
@@ -28,6 +30,10 @@ public class Node {
 	
 	public float getPathCost() {
 		return pathCost;
+	}
+
+	public float getHeuristica() {
+		return heuristica;
 	}
 
 }

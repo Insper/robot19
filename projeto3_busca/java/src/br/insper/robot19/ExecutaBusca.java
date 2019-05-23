@@ -2,10 +2,6 @@ package br.insper.robot19;
 
 import java.io.IOException;
 
-import br.insper.robot19.vrep.VrepRobot;
-import br.insper.robot19.vrep.VrepSimulator;
-import br.insper.robot19.vrep.VrepWorld;
-
 public class ExecutaBusca {
 
 	private static float cellSize = 0.5f; //m
@@ -15,7 +11,7 @@ public class ExecutaBusca {
 		//Carrega o arquivo a partir do arquivo	
 		GridMap map;
 		try {
-			map = GridMap.fromFile("map_teste.txt");
+			map = GridMap.fromFile("mapa_teste.txt");
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
