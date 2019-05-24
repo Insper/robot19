@@ -46,7 +46,7 @@ Os arquivos fornecidos a serem manipulados são:
  ### Instalação do V-REP
  - O simulador deve ser baixado do site: [http://www.coppeliarobotics.com/downloads.html]
  - Baixe a versão 3.61 PRO EDU (licença para uso educacional)
- - No caso do sistema operacional Linux, inicialize o simulador através do script `vrep.sh^
+ - No caso do sistema operacional Linux, inicialize o simulador através do script `vrep.sh`, e copie o arquivo `libremoteApiJava.so` para o diretório `/usr/lib` (usando `sudo`)
  
  ### Código para a integração com o simulador
  
