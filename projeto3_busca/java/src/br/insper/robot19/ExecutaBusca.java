@@ -15,7 +15,7 @@ public class ExecutaBusca {
 		//Carrega o arquivo a partir do arquivo	
 		GridMap map;
 		try {
-			map = GridMap.fromFile("map_teste.txt");
+			map = GridMap.fromFile("mapa");
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

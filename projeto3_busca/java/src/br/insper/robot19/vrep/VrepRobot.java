@@ -11,6 +11,7 @@ import coppelia.remoteApi;
  * @author Antonio Selvatici
  *
  */
+
 public class VrepRobot {
 	
 	//Parameters updated for Pioneer P3DX
