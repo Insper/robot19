@@ -139,4 +139,5 @@ export TURTLEBOT3_MODEL=waffle_pi
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/melodic/lib/parrot_arsdk/:${ALTERAPATH}/modelsim_ase/lib32
 
 export PYTHONPATH=/usr/local/python:/usr/lib/python:$PYTHONPATH:
-
+# exportar corretamente o modelo turtlebot3 para o Rviz 
+export LC_NUMERIC="en_US.UTF-8"
