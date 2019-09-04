@@ -63,6 +63,12 @@ Depois, finalmente em mais um terminal:
 
 Para ver a imagem da câmera:
 
+Abra um novo terminal e digite o comando:
+
+	roslaunch gscam raspicam.launch
+
+Em um novo terminal rode o comando:
+
 	rqt_image_view
 
 Sempre que a câmera estiver invertida, rode para ajustá-la:
