@@ -22,6 +22,8 @@ Explore o tópico `/bumper`  , que é o sensor dos pára-choques do robô, usand
 
 ### Programação:
 
+Agora veja o guia de [ROS Python](../guides/projeto_rospython.md)
+
 Desenvolva um programa em Python/ROS que faça manobras evasivas com o robô após a deteção de uma colisão no sensor *bumper*. Esta entrega já é parte da nota de Projeto 1.
 
 Sugerimos que use o **Python 2** . Não se esqueça de começar todo arquivo `.py` com as duas linhas a seguir:
