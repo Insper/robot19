@@ -48,7 +48,8 @@ def roda_todo_frame(imagem):
 	try:
 		antes = time.clock()
 		cv_image = bridge.compressed_imgmsg_to_cv2(imagem, "bgr8")
-		media, centro, area =  cormodule.identifica_cor(cv_image)
+		cv_image = cv2.flip(cv_image, -1)
+		media, centro, maior_area =  cormodule.identifica_cor(cv_image)
 		depois = time.clock()
 		cv2.imshow("Camera", cv_image)
 	except CvBridgeError as e:
@@ -96,5 +97,3 @@ if __name__=="__main__":
 
 	except rospy.ROSInterruptException:
 	    print("Ocorreu uma exceção com o rospy")
-
-
