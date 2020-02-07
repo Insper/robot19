@@ -54,7 +54,7 @@ def identifica_cor(frame):
 
     # Encontramos os contornos na máscara e selecionamos o de maior área
     #contornos, arvore = cv2.findContours(segmentado_cor.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)	
-    img_out, contornos, arvore = cv2.findContours(segmentado_cor.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE) 
+    contornos, arvore = cv2.findContours(segmentado_cor.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE) 
 
     maior_contorno = None
     maior_contorno_area = 0
@@ -81,7 +81,7 @@ def identifica_cor(frame):
     cv2.putText(frame,"{:d} {:d}".format(*media),(20,100), 1, 4,(255,255,255),2,cv2.LINE_AA)
     cv2.putText(frame,"{:0.1f}".format(maior_contorno_area),(20,50), 1, 4,(255,255,255),2,cv2.LINE_AA)
 
-    cv2.imshow('video', frame)
+   # cv2.imshow('video', frame)
     cv2.imshow('seg', segmentado_cor)
     cv2.waitKey(1)
 
