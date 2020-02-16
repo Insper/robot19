@@ -10,21 +10,12 @@ from sensor_msgs.msg import LaserScan
 
 
 def scaneou(dado):
-	#print("Faixa valida: ", dado.range_min , " - ", dado.range_max )
-	#print("Leituras:")
-	#print(np.array(dado.ranges).round(decimals=2))
+	print("Faixa valida: ", dado.range_min , " - ", dado.range_max )
+	print("Leituras:")
+	print(np.array(dado.ranges).round(decimals=2))
 	#print("Intensities")
 	#print(np.array(dado.intensities).round(decimals=2))
-    distfrente = dado.ranges[0]
-    print("A distancia é: ", distfrente)
-    if distfrente > 0.20:
-	    print("entao, bora pra frente!!")
-	    velocidade = Twist(Vector3(0.1, 0, 0), Vector3(0, 0, 0))
-	    velocidade_saida.publish(velocidade)
-    else:
-	    print("entao, pode parar!!")
-	    velocidade = Twist(Vector3(0, 0, 0), Vector3(0, 0, 0))
-	    velocidade_saida.publish(velocidade)
+
 	
 
 
@@ -39,8 +30,8 @@ if __name__=="__main__":
 
 	while not rospy.is_shutdown():
 		print("Oeee")
-#		velocidade = Twist(Vector3(0, 0, 0), Vector3(0, 0, 0))
-#		velocidade_saida.publish(velocidade)
+		velocidade = Twist(Vector3(0, 0, 0), Vector3(0, 0, 1))
+		velocidade_saida.publish(velocidade)
 		rospy.sleep(2)
 
 
